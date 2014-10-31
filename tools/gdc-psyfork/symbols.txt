@@ -49,7 +49,7 @@
 			"StartTouch"		"_ZN11CBaseEntity10StartTouchEPS_"
 			"Think"				"_ZN11CBaseEntity5ThinkEv"
 			"Touch"				"_ZN11CBaseEntity5TouchEPS_"
-			"TraceAttack"		"_ZN11CBaseEntity11TraceAttackERK15CTakeDamageInfoRK6VectorP10CGameTrace"
+			"TraceAttack"		"_ZN11CBaseEntity11TraceAttackERK15CTakeDamageInfoRK6VectorP10CGameTraceP15CDmgAccumulator"
 			"UpdateOnRemove"	"_ZN11CBaseEntity14UpdateOnRemoveEv"
 			"Use"				"_ZN11CBaseEntity3UseEPS_S0_8USE_TYPEf"
 			"VPhysicsUpdate"	"_ZN11CBaseEntity14VPhysicsUpdateEP14IPhysicsObject"
@@ -58,6 +58,8 @@
 			"Weapon_Drop"		"_ZN20CBaseCombatCharacter11Weapon_DropEP17CBaseCombatWeaponPK6VectorS4_"
 			"Weapon_Equip"		"_ZN11CBasePlayer12Weapon_EquipEP17CBaseCombatWeapon"
 			"Weapon_Switch"		"_ZN20CBaseCombatCharacter13Weapon_SwitchEP17CBaseCombatWeaponi"
+			"GetMaxHealth"		"_ZNK11CBaseEntity12GetMaxHealthEv"
+			"Blocked"		"_ZN11CBaseEntity7BlockedEPS_"
 			
 			// CEntity extras
 			"FVisible"			"_ZN20CBaseCombatCharacter8FVisibleEP11CBaseEntityiPS1_"

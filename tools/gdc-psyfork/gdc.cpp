@@ -129,15 +129,15 @@ int main(int argc, char **argv)
 	int wgfile = open(wgame_binary, O_RDONLY);
 	if (wgfile == -1)
 	{
-		printf("Couldn't open %s\n", wgame_binary);
-		return 0;
+		//printf("Couldn't open %s\n", wgame_binary);
+		//return 0;
 	}
 
 	int wefile = open(wengine_binary, O_RDONLY);
 	if (wefile == -1)
 	{
-		printf("Couldn't open %s\n", wengine_binary);
-		return 0;
+		//printf("Couldn't open %s\n", wengine_binary);
+		//return 0;
 	}
 
 	char err[512];
@@ -250,7 +250,7 @@ int main(int argc, char **argv)
 		const char *linSymbol = it->lin;
 		const char *winSymbol = it->win;
 		bool hasLinux   = (linSymbol && linSymbol[0]);
-		bool hasWindows = (winSymbol && winSymbol[0]);
+		bool hasWindows = false;//(winSymbol && winSymbol[0]);
 		if (!hasLinux && !hasWindows)
 		{
 			printf("  S: %-22s - hasn't linux nor windows data, skipping\n", it->name);

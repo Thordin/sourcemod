@@ -211,6 +211,8 @@ SMCResult DBManager::ReadSMC_KeyValue(const SMCStates *states, const char *key, 
 			s_CurInfo.info.maxReadTimeout = atoi(value);
 		} else if (strcmp(key, "port") == 0) {
 			s_CurInfo.info.port = atoi(value);
+		} else if (strcmp(key, "charset") == 0) {
+			s_CurInfo.info.charset = value;
 		}
 	}
 

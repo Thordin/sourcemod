@@ -636,6 +636,7 @@ namespace SourceMod
 			port = 0;
 			maxTimeout = 0;
 			maxReadTimeout = 0;
+			charset = NULL;
 		}
 		unsigned int dbiVersion;		/**< DBI Version for backwards compatibility */
 		const char *host;				/**< Host string */
@@ -646,6 +647,7 @@ namespace SourceMod
 		unsigned int port;				/**< Port to use, 0=default */
 		unsigned int maxTimeout;		/**< Maximum connect timeout, 0=default */
 		unsigned int maxReadTimeout;		/**< Maximum read timeout, 0=default */
+		const char *charset;			/** default charset **/
 	};
 
 	/**
